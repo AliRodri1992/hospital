@@ -18,9 +18,6 @@ module Hospital
     end
 
     config.active_record.default_timezone = :local
-
-    config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
-    config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
     config.time_zone = 'Mexico City'
   end
 end
