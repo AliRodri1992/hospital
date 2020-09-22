@@ -1,0 +1,21 @@
+version: '3'
+services:
+  db:
+    image: postgres:11
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+        POSTGRES_HOST: localhost
+        POSTGRES_USER: freightspot_user
+        POSTGRES_PASSWORD: fr31ght5p0t_u53r
+        POSTGRES_DB: hospital_development
+  web:
+    build: .
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+    volumes:
+      - ./:/myapp
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
