@@ -22,6 +22,7 @@ gem 'rails', '5.2.4.3'
 gem 'sass-rails'
 gem 'simple_form'
 gem 'slim-rails'
+gem 'strong_migrations'
 gem 'turbolinks'
 gem 'uglifier'
 

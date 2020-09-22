@@ -262,6 +262,8 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
+    strong_migrations (0.7.1)
+      activerecord (>= 5)
     temple (0.8.2)
     thor (1.0.1)
     thread_safe (0.3.6)
@@ -327,6 +329,7 @@ DEPENDENCIES
   slim-rails
   spring
   spring-watcher-listen
+  strong_migrations
   turbolinks
   tzinfo-data
   uglifier
